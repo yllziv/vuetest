@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="../lib/vue.js" type="text/javascript" charset="utf-8" ></script>
+    <script src="../lib/jquery-2.1.4.min.js"></script>
+    <link href="../lib/select2.min.css" rel="stylesheet">
+    <script src="../lib/select2.min.js"></script>
+</head>
+<body>
+
+<div id="el">
+  <p>Selected: {{selected}}</p>
+  <select v-select="selected" :options="options">
+    <option value="0">default</option>
+  </select>
+</div>
+
+  <script src="index.js"></script>
+</body>
+</html>

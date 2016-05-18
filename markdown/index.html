@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="../lib/vue.js" type="text/javascript" charset="utf-8" ></script>
+     <script src="../lib/marked.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id="editor">
+        <textarea v-model="input"></textarea>
+        <!-- 更新元素的 innerHTML -->
+        <div v-html="input | marked"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
